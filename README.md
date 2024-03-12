@@ -1,3 +1,4 @@
 # Croissant Clicker!
 
-A fun clicker game based off of the popular _"Cookie Clicker"_
+A clicker game based on the popular game Cookie Clicker.
+Who's Pierre???
