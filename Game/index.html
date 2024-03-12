@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Croissant Clicker</title>
+	<title>Croissant Clicker</title>
+	<style>
+		body {
+			background-color: #f0f0f0;
+		}
+		#croissant {
+			width: 100px;
+			height: 100px;
+			background-image: url('https://www.example.com/croissant.png');
+			background-size: cover;
+			cursor: pointer;
+		}
+		#score {
+			font-size: 24px;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
-  <h1>This Game is under construction!</h1>
-  <p>Please check again soon.</p>
+	<div id="croissant"></div>
+	<p id="score">0 Croissants</p>
+	<script>
+		let score = 0;
+		document.getElementById("croissant").addEventListener("click", function() {
+			score++;
+
+            if (score == 1){
+                document.getElementById("score").innerHTML = score+" Croissant";
+            }
+
+            else () {
+                document.getElementById("score").innerHTML = score+ " Croissants";
+            }
+			
+		});
+	</script>
 </body>
 </html>
