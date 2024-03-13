@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Croissant Clicker</title>
-	<style>
-		#croissant {
-			width: 100px;
-			height: 100px;
-			background-image: url("/Assets/croissant_nobackground.png");
-			background-size: cover;
-			cursor: pointer;
-		}
-		#score {
-			font-size: 24px;
-			text-align: center;
-		}
-	</style>
+  <title>Croissant Clicker</title>
+  <style>
+    #counter {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  </style>
+  <script>
+    var count = 0;
+
+    function incrementCounter() {
+      count++;
+      document.getElementById("counter").innerHTML = count + " Croissants";
+    }
+  </script>
 </head>
 <body>
-	<div id="croissant"></div>
-	<p id="score">0 Croissants</p>
-	<script>
-		let score = 0;
-		document.getElementById("croissant").addEventListener("click", function() {
-			score++;
-
-			if (score === 1) {
-				document.getElementById("score").innerHTML = score + " Croissant";
-			} else {
-				document.getElementById("score").innerHTML = score + " Croissants";
-			}
-			
-		});
-	</script>
+  <h1>Click Counter</h1>
+  <img src="/Assets/croissant_nobackground.png" onclick="incrementCounter()" alt="Click the Croissant!">
+  <div id="counter">0</div>
 </body>
 </html>
